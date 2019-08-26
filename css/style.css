@@ -1,0 +1,14 @@
+
+body{
+    font-family: Kanit;
+}
+
+#chart-container{
+    text-align: center;
+}
+
+.content_header{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}

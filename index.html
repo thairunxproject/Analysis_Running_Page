@@ -1,10 +1,72 @@
 <html>
     <head>
-        <title>
-            Analysis Running Page
-        </title>
-    </head>
+
+        <title> Analysis Facebook Page About Running : ) </title>
+
+        <!-- Include jQuery -->
+        <script type="text/javascript" src=" https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <!-- Include fusioncharts core library file -->
+        <script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+        <!-- Include fusion theme file -->
+        <script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+        <!-- Include fusioncharts jquery plugin -->
+        <script type="text/javascript" src=" https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" href="image/thairun.png">
+        </head>
+
     <body>
-        This is Content
+        <script type="text/javascript">
+            $('document').ready(function () {
+                $("#chart-container").insertFusionCharts({
+                    type: "column2d",
+                    width: "700",
+                    height: "400",
+                    dataFormat: "json",
+                    dataSource: {
+                        // Chart Configuration
+                        "chart": {
+                            "caption": "จำนวนยอดไลก์เฟซบุ๊กเพจเกี่ยวกับการวิ่ง",
+                            "subCaption": "ณ วันที่ 26 สิงหาคม 2562",
+                            "xAxisName": "ชื่อเพจ",
+                            "yAxisName": "จำนวนยอดคนกดไลก์",
+                            "numberSuffix": "K",
+                            "theme": "fusion",
+                            "baseFont": "Kanit",
+
+                        },
+                        // Chart Data
+                        "data": [{
+                            "label": "Thairun",
+                            "value": "642.482"
+                        }, {
+                            "label": "วิ่งไหนดี",
+                            "value": "770.927"
+                        }, {
+                            "label": "ออกไปวิ่ง",
+                            "value": "95.000"
+                        }, {
+                            "label": "นักวิ่งน่ารัก",
+                            "value": "111.708"
+                        }]
+                    }
+                });
+            });
+        </script>
+
+    <div class='content_main'></div>
+
+        <div class='content_header'>
+            <img src='image/thairun.png'><br>
+            <h3>Analysis Facebook Page About Running Project</h3>
+        </div>
+
+        <div class='content_graph'>
+                <div id="chart-container">FusionCharts will render here</div>
+        </div>
+
+    </div>
+    
     </body>
 </html>
