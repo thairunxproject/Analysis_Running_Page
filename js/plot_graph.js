@@ -1,7 +1,7 @@
 $('document').ready(function () {
     $("#chart-container").insertFusionCharts({
         type: "column2d",
-        width: "700",
+        width: "100%",
         height: "400",
         dataFormat: "json",
         dataSource: {
