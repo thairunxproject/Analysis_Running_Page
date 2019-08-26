@@ -728,7 +728,7 @@ textarea.form-control {
 /* /testimonial */
 /* footer */
 .footer-section {
-  padding-top: 200px;
+  /* padding-top: 200px; */
 }
 
 .section-on-footer {
@@ -908,3 +908,9 @@ blockquote {
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+
+.footer_detail{
+  color : #ffffff;
+  padding-left: 50px;
+  font-size: 16px;
+}
