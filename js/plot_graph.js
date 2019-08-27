@@ -1,16 +1,117 @@
 $('document').ready(function () {
 
-  $("#chart-container").insertFusionCharts({
+  $("#chart-work-plan").insertFusionCharts({
+    type: "gantt",
+    width: "100%",
+    height: "500",
+    dataFormat: "json",
+    dataSource: {
+      chart: {
+        dateformat: "dd/mm/yyyy",
+        caption: "แผนงานที่กำหนด",
+        theme: "fusion",
+        canvasborderalpha: "40",
+        baseFont: "Kanit",
+        ganttlinealpha: "50",
+        captionFontSize: "20"
+      },
+      tasks: {
+        color: "#5D62B5",
+        task: [
+          {
+            start: "26/08/2019",
+            end: "27/08/2019"
+          },
+          {
+            start: "26/08/2019",
+            end: "28/08/2019"
+          },
+          {
+            start: "27/08/2019",
+            end: "29/08/2019"
+          },
+          {
+            start: "28/08/2019",
+            end: "30/08/2019"
+          },
+          {
+            start: "30/08/2019",
+            end: "31/08/2019"
+          }
+        ]
+      },
+      processes: {
+        headertext: "Task",
+        headeralign: "left",
+        fontsize: "14",
+        isbold: "0",
+        align: "left",
+        process: [
+          {
+            label: "วางแผนงานทำงาน"
+          },
+          {
+            label: "เริ่มสำรวจและเก็บข้อมูลพื้นฐาน<br>เพจเฟซบุ๊กที่เกี่ยวข้องกับการวิ่ง"
+          },
+          {
+            label: "เริ่มเก็บข้อมูลเชิงลึกและกำหนดตัววัดคะแนน<br>ในแต่ละหัวข้อที่สนใจ"
+          },
+          {
+            label: "สรุปข้อมูลจากการสำรวจทั้งหมด<br>ในรูปแบบข้อมูลและกราฟแสดงผล"
+          },
+          {
+            label: "นำเสนอผลการดำเนินการทั้งหมด"
+          }
+        ]
+      },
+      categories: [
+        {
+          category: [
+            {
+              start: "26/08/2019",
+              end: "27/08/2019",
+              label: "Day 1"
+            },
+            {
+                start: "27/08/2019",
+                end: "28/08/2019",                      
+                label: "Day 2"
+            },
+            {
+                start: "28/08/2019",
+                end: "29/08/2019",                      
+                label: "Day 3"
+            },
+            {
+                start: "29/08/2019",
+                end: "30/08/2019",
+                label: "Day 4"
+            },
+            {
+                start: "30/08/2019",
+                end: "31/08/2019",
+                label: "Day 5"
+            }
+          ]
+        }
+      ]
+    }
+  });
+
+
+
+
+  $("#chart-like-page").insertFusionCharts({
     type: "scrollcolumn2d",
     width: "100%",
     height: "400",
     dataFormat: "json",
     dataSource: {
       chart: {
-        caption: "ยอดไลก์และติดตามของ 10 อันดับเพจเกี่ยวกับการวิ่ง",
-        subcaption: "ณ วันที่ 27 สิงหาคม 2562",
+        caption: "ยอดไลก์และติดตามของ 12 อันดับเพจเกี่ยวกับการวิ่ง",
+        subcaption: "ณ วันที่ 26 สิงหาคม 2562",
         yaxisname: "ยอดการกดไลก์และติดตาม",
-        numvisibleplot: "22",
+        numvisibleplot: "24",
         formatNumber: "0",
         labeldisplay: "auto",
         theme: "fusion",
@@ -24,6 +125,9 @@ $('document').ready(function () {
             },
             {
               label: "ThaiRun"
+            },
+            {
+              label: "Runner’s Journey"
             },
             {
               label: "ไปวิ่งกันเถอะ"
@@ -41,17 +145,18 @@ $('document').ready(function () {
               label: "นักวิ่งน่ารัก"
             },
             {
+              label: "วิ่งแถวบ้าน"
+            },
+            {
               label: "ออกไปวิ่ง"
+            },
+            {
+              label: "Running Insider"
             },
             {
               label: "ไปวิ่งกัน"
             },
-            {
-              label: "ไปวิ่ง"
-            },
-            {
-              label: "Running thailand events"
-            }
+           
           ]
         }
       ],
@@ -64,6 +169,9 @@ $('document').ready(function () {
             },
             {
               value: "642590"
+            },
+            {
+              value: "132710"
             },
             {
               value: "132346"
@@ -104,6 +212,9 @@ $('document').ready(function () {
               value: "660562"
             },
             {
+              value: "151102"
+            },
+            {
               value: "136148"
             },
             {
@@ -138,10 +249,10 @@ $('document').ready(function () {
   
 
 
-    $("#chart-container-stack").insertFusionCharts({
+    $("#chart-like-page-grown").insertFusionCharts({
         type: "scrollstackedcolumn2d",
         width: "100%",
-        height: "100%",
+        height: "500",
         dataFormat: "json",
         dataSource: {
             chart: {
@@ -278,96 +389,133 @@ $('document').ready(function () {
         });
 
 
-        $("#chart-work-plan").insertFusionCharts({
-            type: "gantt",
+          
+          $("#chart-vistual-graph").insertFusionCharts({
+            type: "bubble",
             width: "100%",
             height: "500",
             dataFormat: "json",
             dataSource: {
               chart: {
-                dateformat: "dd/mm/yyyy",
-                caption: "แผนงานที่กำหนด",
                 theme: "fusion",
-                canvasborderalpha: "40",
-                baseFont: "Kanit",
-                ganttlinealpha: "50"
-              },
-              tasks: {
-                color: "#5D62B5",
-                task: [
-                  {
-                    start: "26/08/2019",
-                    end: "27/08/2019"
-                  },
-                  {
-                    start: "26/08/2019",
-                    end: "28/08/2019"
-                  },
-                  {
-                    start: "28/08/2019",
-                    end: "29/08/2019"
-                  },
-                  {
-                    start: "29/08/2019",
-                    end: "30/08/2019"
-                  },
-                  {
-                    start: "30/08/2019",
-                    end: "31/08/2019"
-                  }
-                ]
-              },
-              processes: {
-                headertext: "Task",
-                headeralign: "left",
-                fontsize: "14",
-                isbold: "0",
-                align: "left",
-                process: [
-                  {
-                    label: "วางแผนงานทำงาน"
-                  },
-                  {
-                    label: "เริ่มสำรวจและเก็บข้อมูลพื้นฐาน<br>เพจเฟซบุ๊กที่เกี่ยวข้องกับการวิ่ง"
-                  },
-                  {
-                    label: "เริ่มเก็บข้อมูลเชิงลึกและกำหนดตัววัดคะแนน<br>ในแต่ละหัวข้อที่สนใจ"
-                  },
-                  {
-                    label: "สรุปข้อมูลจากการสำรวจทั้งหมด<br>ในรูปแบบข้อมูลและกราฟแสดงผล"
-                  },
-                  {
-                    label: "นำเสนอผลการดำเนินการทั้งหมด"
-                  }
-                ]
+                caption: "Sales & Profit Analysis",
+                subcaption: "For Last Quarter",
+                xaxisminvalue: "-100",
+                xaxismaxvalue: "100",
+                yaxisminvalue: "-30000",
+                yaxismaxvalue: "30000",
+                xaxisname: "Average Price",
+                yaxisname: "Units Sold",
+                plottooltext: "$name : Profit Contribution: $zvalue%",
+                drawquadrant: "1",
+                quadrantlabeltl: "Low Price / High Sales",
+                quadrantlabeltr: "High Price / High Sales",
+                quadrantlabelbl: "Low Price / Low Sales",
+                quadrantlabelbr: "High Price / Low Sales",
+                quadrantxval: "0",
+                quadrantyval: "12000",
+                quadrantlinealpha: "50",
+                quadrantlinethickness: "2"
               },
               categories: [
                 {
                   category: [
                     {
-                      start: "26/08/2019",
-                      end: "27/08/2019",
-                      label: "Day 1"
+                      label: "0",
+                      x: "0"
                     },
                     {
-                        start: "27/08/2019",
-                        end: "28/08/2019",                      
-                        label: "Day 2"
+                      label: "$20",
+                      x: "20",
+                      showverticalline: "1"
                     },
                     {
-                        start: "28/08/2019",
-                        end: "29/08/2019",                      
-                        label: "Day 3"
+                      label: "$40",
+                      x: "40",
+                      showverticalline: "1"
                     },
                     {
-                        start: "29/08/2019",
-                        end: "30/08/2019",
-                        label: "Day 4"
+                      label: "$60",
+                      x: "60",
+                      showverticalline: "1"
                     },
                     {
-                        start: "30/08/2019",
-                        end: "31/08/2019",
-                        label: "Day 5"
+                      label: "$80",
+                      x: "80",
+                      showverticalline: "1"
+                    },
+                    {
+                      label: "$100",
+                      x: "100",
+                      showverticalline: "1"
+                    }
+                  ]
+                }
+              ],
+              dataset: [
+                {
+                  data: [
+                    {
+                      x: "80",
+                      y: "15000",
+                      z: "24",
+                      name: "Nike"
+                    },
+                    {
+                      x: "60",
+                      y: "18500",
+                      z: "26",
+                      name: "Adidas"
+                    },
+                    {
+                      x: "-50",
+                      y: "19450",
+                      z: "19",
+                      name: "Puma"
+                    },
+                    {
+                      x: "65",
+                      y: "10500",
+                      z: "8",
+                      name: "Fila"
+                    },
+                    {
+                      x: "43",
+                      y: "8750",
+                      z: "5",
+                      name: "Lotto"
+                    },
+                    {
+                      x: "32",
+                      y: "22000",
+                      z: "10",
+                      name: "Reebok"
+                    },
+                    {
+                      x: "44",
+                      y: "13000",
+                      z: "9",
+                      name: "Woodland"
+                    }
+                  ]
+                }
+              ],
+              trendlines: [
+                {
+                  line: [
+                    {
+                      startvalue: "20000",
+                      endvalue: "30000",
+                      istrendzone: "1",
+                      color: "#aaaaaa",
+                      alpha: "14"
+                    },
+                    {
+                      startvalue: "10000",
+                      endvalue: "20000",
+                      istrendzone: "1",
+                      color: "#aaaaaa",
+                      alpha: "7"
                     }
                   ]
                 }
@@ -375,7 +523,14 @@ $('document').ready(function () {
             }
           });
           
+});
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
 
-
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
 });
