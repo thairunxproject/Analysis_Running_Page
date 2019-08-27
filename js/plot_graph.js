@@ -54,7 +54,7 @@ $('document').ready(function () {
             label: "เริ่มสำรวจและเก็บข้อมูลพื้นฐาน<br>เพจเฟซบุ๊กที่เกี่ยวข้องกับการวิ่ง"
           },
           {
-            label: "เริ่มเก็บข้อมูลเชิงลึกและกำหนดตัววัดคะแนน<br>ในแต่ละหัวข้อที่สนใจ"
+            label: "เริ่มเก็บข้อมูลเชิงลึกและกำหนดตัว<br>วัดคะแนนในแต่ละหัวข้อที่สนใจ"
           },
           {
             label: "สรุปข้อมูลจากการสำรวจทั้งหมด<br>ในรูปแบบข้อมูลและกราฟแสดงผล"
@@ -154,9 +154,8 @@ $('document').ready(function () {
               label: "Running Insider"
             },
             {
-              label: "ไปวิ่งกัน"
-            },
-           
+              label: "ไปวิ่งกัน : RunningHub"
+            }
           ]
         }
       ],
@@ -189,16 +188,16 @@ $('document').ready(function () {
               value: "111707"
             },
             {
+              value: "101052"
+            },
+            {
               value: "95006"
             },
             {
+              value: "94722"
+            },
+            {
               value: "94171"
-            },
-            {
-              value: "73942"
-            },
-            {
-              value: "34589"
             }
           ]
         },
@@ -227,19 +226,19 @@ $('document').ready(function () {
               value: "117264"
             },
             {
-              value: "114395"
+              value: "111707"
             },
             {
-              value: "95006"
+              value: "112637"
+            },
+            {
+              value: "99680"
+            },
+            {
+              value: "97332"
             },
             {
               value: "104886"
-            },
-            {
-              value: "74940"
-            },
-            {
-              value: "36279"
             }
           ]
         }
@@ -257,11 +256,11 @@ $('document').ready(function () {
         dataSource: {
             chart: {
             caption: "จำนวนยอดไลก์เพจที่เพิ่มขึ้นในระยะเวลา 4 วัน",
-            subCaption: "ตั้งแต่วันที่ 26 - 30 สิงหาคม 2562",
+            subCaption: "ตั้งแต่วันที่ 26 - 29 สิงหาคม 2562",
             yaxisname: "ยอดไลก์",
             flatscrollbars: "0",
             scrollheight: "12",
-            numvisibleplot: "11",
+            numvisibleplot: "12",
             formatNumber: "0",
             baseFont: "Kanit",
             plottooltext:
@@ -276,6 +275,9 @@ $('document').ready(function () {
                   },
                   {
                     label: "ThaiRun"
+                  },
+                  {
+                    label: "Runner’s Journey"
                   },
                   {
                     label: "ไปวิ่งกันเถอะ"
@@ -293,17 +295,18 @@ $('document').ready(function () {
                     label: "นักวิ่งน่ารัก"
                   },
                   {
+                    label: "วิ่งแถวบ้าน"
+                  },
+                  {
                     label: "ออกไปวิ่ง"
                   },
                   {
-                    label: "ไปวิ่งกัน"
+                    label: "Running Insider"
                   },
                   {
-                    label: "ไปวิ่ง"
-                  },
-                  {
-                    label: "Running thailand events"
+                    label: "ไปวิ่งกัน : RunningHub"
                   }
+      
                 ]
             }
             ],
@@ -316,6 +319,9 @@ $('document').ready(function () {
                   },
                   {
                     value: "642590"
+                  },
+                  {
+                    value: "132710"
                   },
                   {
                     value: "132346"
@@ -333,56 +339,60 @@ $('document').ready(function () {
                     value: "111707"
                   },
                   {
+                    value: "101052"
+                  },
+                  {
                     value: "95006"
                   },
                   {
+                    value: "94722"
+                  },
+                  {
                     value: "94171"
-                  },
-                  {
-                    value: "73942"
-                  },
-                  {
-                    value: "34589"
                   }
+      
                 ]
             },
             {
-                seriesname: "ยอดคนกดไลก์เพิ่มใน 5 วัน",
+                seriesname: "ยอดคนกดไลก์เพิ่มใน 4 วัน",
                 data: [
                   {
-                    value: "1000"
+                    value: "10000"
                   },
                   {
-                    value: "1000"
+                    value: "10000"
                   },
                   {
-                    value: "1000"
+                    value: "10000"
                   },
                   {
-                    value: "1000"
+                    value: "10000"
+                  },
+                  {
+                    value: "10000"
                   },
                   { 
-                    value: "1000"
+                    value: "10000"
                   },
                   {
-                    value: "1000"
+                    value: "10000"
                   },
                   {
-                    value: "1000"
+                    value: "10000"
                   },
                   {
-                    value: "1000"
+                    value: "10000"
                   },
                   {
-                    value: "1000"
+                    value: "10000"
                   },
                   {
-                    value: "1000"
+                    value: "10000"
                   },
                   {
-                    value: "1000"
+                    value: "10000"
                   }
-                ]
+                  ]
             }
             ]
         }

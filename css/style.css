@@ -212,7 +212,7 @@ a:hover {
 
 .section {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 0px;
 }
 
 .section-title {
@@ -913,6 +913,7 @@ blockquote {
   color : #ffffff;
   padding-left: 50px;
   font-size: 16px;
+  padding-bottom: 100px;
 }
 
 .about_content{
@@ -920,13 +921,14 @@ blockquote {
   text-align: center;
 }
 
-
-
-
 #chart-work-plan,
 #chart-like-page,
 #chart-like-page-grown{
-  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+#workplan{
+  padding-top:120px;
 }
 
 #home{
@@ -939,4 +941,14 @@ blockquote {
 
 .logo_page_img{
   width: 100px;
+}
+
+.content_about_project{
+  text-indent: 30px;
+  text-align: left;
+  margin-top: 50px;
+}
+
+#properties{
+  padding-top: 120px;
 }
