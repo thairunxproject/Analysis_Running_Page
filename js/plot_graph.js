@@ -255,7 +255,7 @@ $('document').ready(function () {
         dataFormat: "json",
         dataSource: {
             chart: {
-            caption: "จำนวนยอดไลก์เพจที่เพิ่มขึ้นในระยะเวลา 4 วัน",
+            caption: "อัตราการเติบโตของจำนวนยอดไลก์ภายใน 4 วัน",
             subCaption: "ตั้งแต่วันที่ 26 - 29 สิงหาคม 2562",
             yaxisname: "ยอดไลก์",
             flatscrollbars: "0",
@@ -408,124 +408,112 @@ $('document').ready(function () {
             dataSource: {
               chart: {
                 theme: "fusion",
-                caption: "Sales & Profit Analysis",
-                subcaption: "For Last Quarter",
-                xaxisminvalue: "-100",
-                xaxismaxvalue: "100",
-                yaxisminvalue: "-30000",
-                yaxismaxvalue: "30000",
-                xaxisname: "Average Price",
-                yaxisname: "Units Sold",
-                plottooltext: "$name : Profit Contribution: $zvalue%",
+                caption: "การจำลองข้อมูลเพจที่เกี่ยวข้องกับการวิ่ง",
+                subcaption: "โดยใช้ข้อมูลเพจ 12 เพจ",
+                xaxisminvalue: "-225",
+                xaxismaxvalue: "225",
+                yaxisminvalue: "-225",
+                yaxismaxvalue: "225",
+                xaxisname: "คะแนนในหัวข้อ [ Promote , Review , Adverties ]",
+                yaxisname: "คะแนนในหัวข้อ [ Entertain , Quotes & Interview , Articles ]",
+                plottooltext: "$name | Score Properties : [ $xvalue , $yvalue ] | Like Page Count: $zvalue K",
                 drawquadrant: "1",
-                quadrantlabeltl: "Low Price / High Sales",
-                quadrantlabeltr: "High Price / High Sales",
-                quadrantlabelbl: "Low Price / Low Sales",
-                quadrantlabelbr: "High Price / Low Sales",
+                quadrantlabeltl: "",
+                quadrantlabeltr: "",
+                quadrantlabelbl: "",
+                quadrantlabelbr: "",
                 quadrantxval: "0",
-                quadrantyval: "12000",
-                quadrantlinealpha: "50",
-                quadrantlinethickness: "2"
+                quadrantyval: "0",
+                quadrantlinealpha: "80",
+                quadrantlinethickness: "2",
+                baseFont: "Kanit"
               },
-              categories: [
-                {
-                  category: [
-                    {
-                      label: "0",
-                      x: "0"
-                    },
-                    {
-                      label: "$20",
-                      x: "20",
-                      showverticalline: "1"
-                    },
-                    {
-                      label: "$40",
-                      x: "40",
-                      showverticalline: "1"
-                    },
-                    {
-                      label: "$60",
-                      x: "60",
-                      showverticalline: "1"
-                    },
-                    {
-                      label: "$80",
-                      x: "80",
-                      showverticalline: "1"
-                    },
-                    {
-                      label: "$100",
-                      x: "100",
-                      showverticalline: "1"
-                    }
-                  ]
-                }
-              ],
               dataset: [
                 {
                   data: [
                     {
-                      x: "80",
-                      y: "15000",
-                      z: "24",
-                      name: "Nike"
+                      x: "93.75",
+                      y: "7.5",
+                      z: "770.818",
+                      name: "วิ่งไหนดี",
+                      color: "#49A2C8" 
                     },
                     {
-                      x: "60",
-                      y: "18500",
-                      z: "26",
-                      name: "Adidas"
+                      x: "72.5",
+                      y: "41.5",
+                      z: "642.59",
+                      name: "Thairun",
+                      color: "#5D62B4" 
                     },
                     {
-                      x: "-50",
-                      y: "19450",
-                      z: "19",
-                      name: "Puma"
+                      x: "-12",
+                      y: "102.5",
+                      z: "132.71",
+                      name: "Runner’s Journey",
+                      color: "#49A2C8" 
                     },
                     {
-                      x: "65",
-                      y: "10500",
-                      z: "8",
-                      name: "Fila"
+                      x: "-8",
+                      y: "93",
+                      z: "132.346",
+                      name: "ไปวิ่งกันเถอะ",
+                      color: "#5382BE" 
                     },
                     {
-                      x: "43",
-                      y: "8750",
-                      z: "5",
-                      name: "Lotto"
+                      x: "67",
+                      y: "30.5",
+                      z: "130.302",
+                      name: "เรื่องวิ่งเรื่องกล้วย",
+                      color: "#35E2DD" 
                     },
                     {
-                      x: "32",
-                      y: "22000",
-                      z: "10",
-                      name: "Reebok"
+                      x: "161",
+                      y: "-56",
+                      z: "116.865",
+                      name: "Runlah",
+                      color: "#5382BE" 
                     },
                     {
-                      x: "44",
-                      y: "13000",
-                      z: "9",
-                      name: "Woodland"
-                    }
-                  ]
-                }
-              ],
-              trendlines: [
-                {
-                  line: [
-                    {
-                      startvalue: "20000",
-                      endvalue: "30000",
-                      istrendzone: "1",
-                      color: "#aaaaaa",
-                      alpha: "14"
+                      x: "45.5",
+                      y: "58.5",
+                      z: "114.32",
+                      name: "วิ่งไหนกัน ปั่นไหนดี",
+                      color: "#3FC2D3" 
                     },
                     {
-                      startvalue: "10000",
-                      endvalue: "20000",
-                      istrendzone: "1",
-                      color: "#aaaaaa",
-                      alpha: "7"
+                      x: "-75",
+                      y: "194.5",
+                      z: "111.707",
+                      name: "นักวิ่งน่ารัก",
+                      color: "#35E2DD" 
+                    },
+                    {
+                      x: "62",
+                      y: "42.5",
+                      z: "101.052",
+                      name: "วิ่งแถวบ้าน",
+                      color: "#35E2DD" 
+                    },
+                    {
+                      x: "94",
+                      y: "14",
+                      z: "95.006",
+                      name: "ออกไปวิ่ง",
+                      color: "#35E2DD" 
+                    },
+                    {
+                      x: "-59",
+                      y: "188",
+                      z: "94.722",
+                      name: "Running Insider",
+                      color: "#3FC2D3" 
+                    },
+                    {
+                      x: "-7",
+                      y: "113.5",
+                      z: "94.171",
+                      name: "ไปวิ่งกัน",
+                      color: "#3FC2D3" 
                     }
                   ]
                 }
