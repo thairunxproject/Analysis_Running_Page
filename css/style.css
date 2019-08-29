@@ -931,6 +931,11 @@ blockquote {
   padding-top:120px;
 }
 
+#Data_Visualization,
+#Creator{
+  padding-top:100px;
+}
+
 #home{
   margin:0px;
 }
@@ -956,4 +961,12 @@ blockquote {
 .data_reference{
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+.data_for_visualization{
+  padding: 20px;
+}
+
+#chart-vistual-radar{
+  padding-bottom: 100px;
 }

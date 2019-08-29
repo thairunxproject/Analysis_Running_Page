@@ -520,6 +520,96 @@ $('document').ready(function () {
               ]
             }
           });
+
+          $("#chart-vistual-radar").insertFusionCharts({
+            type: "radar",
+            width: "100%",
+            height: "600",
+            dataFormat: "json",
+            dataSource: {
+              chart: {
+                caption: "Temperature in New York: Low & High",
+                subcaption: "For 2017",
+                theme: "fusion",
+                numbersuffix: "°F",
+                plotfillalpha: "40"
+              },
+              categories: [
+                {
+                  category: [
+                    {
+                      label: "Jan"
+                    },
+                    {
+                      label: "Feb"
+                    },
+                    {
+                      label: "Mar"
+                    },
+                    {
+                      label: "Apr"
+                    },
+                    {
+                      label: "May"
+                    },
+                    {
+                      label: "Jun"
+                    }
+                  ]
+                }
+              ],
+              dataset: [
+                {
+                  seriesname: "Avg. High",
+                  plottooltext: "<b>$label</b> maximum temp is <b>$datavalue</b>",
+                  data: [
+                    {
+                      value: "39"
+                    },
+                    {
+                      value: "42"
+                    },
+                    {
+                      value: "50"
+                    },
+                    {
+                      value: "60"
+                    },
+                    {
+                      value: "71"
+                    },
+                    {
+                      value: "79"
+                    }
+                  ]
+                },
+                {
+                  seriesname: "Avg. Low",
+                  plottooltext: "<b>$label</b> minimum temp is <b>$datavalue</b>",
+                  data: [
+                    {
+                      value: "26"
+                    },
+                    {
+                      value: "29"
+                    },
+                    {
+                      value: "35"
+                    },
+                    {
+                      value: "44"
+                    },
+                    {
+                      value: "55"
+                    },
+                    {
+                      value: "64"
+                    }
+                  ]
+                }
+              ]
+            }
+          });         
           
 });
 
