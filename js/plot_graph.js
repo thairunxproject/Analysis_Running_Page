@@ -8,7 +8,7 @@ $('document').ready(function () {
     dataSource: {
       chart: {
         dateformat: "dd/mm/yyyy",
-        caption: "แผนงานที่กำหนด",
+        subcaption: "",
         theme: "fusion",
         canvasborderalpha: "40",
         baseFont: "Kanit",
@@ -354,43 +354,43 @@ $('document').ready(function () {
                 ]
             },
             {
-                seriesname: "ยอดคนกดไลก์เพิ่มใน 4 วัน",
+                seriesname: "ยอดคนกดไลก์เพิ่มในเวลา 4 วัน",
                 data: [
                   {
-                    value: "10000"
+                    value: "2140"
                   },
                   {
-                    value: "10000"
+                    value: "1313"
                   },
                   {
-                    value: "10000"
+                    value: "968"
                   },
                   {
-                    value: "10000"
+                    value: "922"
                   },
                   {
-                    value: "10000"
+                    value: "250"
                   },
                   { 
-                    value: "10000"
+                    value: "648"
                   },
                   {
-                    value: "10000"
+                    value: "445"
                   },
                   {
-                    value: "10000"
+                    value: "103"
                   },
                   {
-                    value: "10000"
+                    value: "3370"
                   },
                   {
-                    value: "10000"
+                    value: "303"
                   },
                   {
-                    value: "10000"
+                    value: "220"
                   },
                   {
-                    value: "10000"
+                    value: "2459"
                   }
                   ]
             }
@@ -414,7 +414,7 @@ $('document').ready(function () {
                 xaxismaxvalue: "225",
                 yaxisminvalue: "-225",
                 yaxismaxvalue: "225",
-                xaxisname: "คะแนนในหัวข้อ [ Promote , Review , Adverties ]",
+                xaxisname: "คะแนนในหัวข้อ [ Promote , Review , advertise ]",
                 yaxisname: "คะแนนในหัวข้อ [ Entertain , Quotes & Interview , Articles ]",
                 plottooltext: "$name | Score Properties : [ $xvalue , $yvalue ] | Like Page Count: $zvalue K",
                 drawquadrant: "1",
