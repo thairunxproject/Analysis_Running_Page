@@ -532,7 +532,8 @@ $('document').ready(function () {
                 subcaption: "",
                 theme: "fusion",
                 numbersuffix: "",
-                plotfillalpha: "40"
+                plotfillalpha: "40",
+                baseFont: "Kanit"
                 },
               categories: [
                 {
