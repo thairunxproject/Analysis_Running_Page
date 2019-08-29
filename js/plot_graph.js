@@ -528,82 +528,322 @@ $('document').ready(function () {
             dataFormat: "json",
             dataSource: {
               chart: {
-                caption: "Temperature in New York: Low & High",
-                subcaption: "For 2017",
+                caption: "คุณภาพโพสต์ในแต่ละด้านของเพจ",
+                subcaption: "",
                 theme: "fusion",
-                numbersuffix: "°F",
+                numbersuffix: "",
                 plotfillalpha: "40"
-              },
+                },
               categories: [
                 {
                   category: [
                     {
-                      label: "Jan"
+                      label: "Promote"
                     },
                     {
-                      label: "Feb"
+                      label: "Review"
                     },
                     {
-                      label: "Mar"
+                      label: "Advertise"
                     },
                     {
-                      label: "Apr"
+                      label: "Quotes & Interviews"
                     },
                     {
-                      label: "May"
+                      label: "Entertain"
                     },
                     {
-                      label: "Jun"
+                      label: "Articles"
                     }
                   ]
                 }
               ],
               dataset: [
                 {
-                  seriesname: "Avg. High",
-                  plottooltext: "<b>$label</b> maximum temp is <b>$datavalue</b>",
+                  seriesname: "วิ่งไหนดี",
+                  plottooltext: "$seriesname - <b> Scrore $label : <b>$datavalue</b>",
                   data: [
                     {
-                      value: "39"
+                      value: "7.75"
                     },
                     {
-                      value: "42"
+                      value: "9.5"
                     },
                     {
-                      value: "50"
+                      value: "9"
                     },
                     {
-                      value: "60"
+                      value: "9"
                     },
                     {
-                      value: "71"
+                      value: "8.5"
                     },
                     {
-                      value: "79"
+                      value: "9.5"
                     }
                   ]
                 },
                 {
-                  seriesname: "Avg. Low",
-                  plottooltext: "<b>$label</b> minimum temp is <b>$datavalue</b>",
+                  seriesname: "Thairun",
+                  plottooltext: "$seriesname - <b> Scrore $label : <b>$datavalue</b>",
                   data: [
                     {
-                      value: "26"
+                      value: "8.75"
                     },
                     {
-                      value: "29"
+                      value: "0"
                     },
                     {
-                      value: "35"
+                      value: "8.5"
                     },
                     {
-                      value: "44"
+                      value: "8.5"
                     },
                     {
-                      value: "55"
+                      value: "8"
                     },
                     {
-                      value: "64"
+                      value: "9.5"
+                    }
+                  ]
+                },
+                {
+                  seriesname: "Runner’s Journey",
+                  plottooltext: "$seriesname - <b> Scrore $label : <b>$datavalue</b>",
+                  data: [
+                    {
+                      value: "8"
+                    },
+                    {
+                      value: "0"
+                    },
+                    {
+                      value: "7.5"
+                    },
+                    {
+                      value: "7.75"
+                    },
+                    {
+                      value: "9"
+                    },
+                    {
+                      value: "7.5"
+                    }
+                  ]
+                },
+                {
+                  seriesname: "ไปวิ่งกันเถอะ",
+                  plottooltext: "$seriesname - <b> Scrore $label : <b>$datavalue</b>",
+                  data: [
+                    {
+                      value: "8"
+                    },
+                    {
+                      value: "7"
+                    },
+                    {
+                      value: "0"
+                    },
+                    {
+                      value: "8"
+                    },
+                    {
+                      value: "8"
+                    },
+                    {
+                      value: "8"
+                    }
+                  ]
+                },
+                {
+                  seriesname: "เรื่องวิ่งเรื่องกล้วย",
+                  plottooltext: "$seriesname - <b> Scrore $label : <b>$datavalue</b>",
+                  data: [
+                    {
+                      value: "8"
+                    },
+                    {
+                      value: "8"
+                    },
+                    {
+                      value: "9"
+                    },
+                    {
+                      value: "8"
+                    },
+                    {
+                      value: "0"
+                    },
+                    {
+                      value: "8.5"
+                    }
+                  ]
+                },
+                {
+                  seriesname: "Runlah",
+                  plottooltext: "$seriesname - <b> Scrore $label : <b>$datavalue</b>",
+                  data: [
+                    {
+                      value: "8.5"
+                    },
+                    {
+                      value: "0.5"
+                    },
+                    {
+                      value: "8"
+                    },
+                    {
+                      value: "0.5"
+                    },
+                    {
+                      value: "0"
+                    },
+                    {
+                      value: "9.5"
+                    }
+                  ]
+                },
+                {
+                  seriesname: "วิ่งไหนกัน ปั่นไหนดี",
+                  plottooltext: "$seriesname - <b> Scrore $label : <b>$datavalue</b>",
+                  data: [
+                    {
+                      value: "8"
+                    },
+                    {
+                      value: "8"
+                    },
+                    {
+                      value: "0"
+                    },
+                    {
+                      value: "9"
+                    },
+                    {
+                      value: "8"
+                    },
+                    {
+                      value: "9.25"
+                    }
+                  ]
+                },
+                {
+                  seriesname: "นักวิ่งน่ารัก",
+                  plottooltext: "$seriesname - <b> Scrore $label : <b>$datavalue</b>",
+                  data: [
+                    {
+                      value: "0.5"
+                    },
+                    {
+                      value: "0.5"
+                    },
+                    {
+                      value: "0.5"
+                    },
+                    {
+                      value: "0.5"
+                    },
+                    {
+                      value: "9"
+                    },
+                    {
+                      value: "8.75"
+                    }
+                  ]
+                },
+                {
+                  seriesname: "วิ่งแถวบ้าน",
+                  plottooltext: "$seriesname - <b> Scrore $label : <b>$datavalue</b>",
+                  data: [
+                    {
+                      value: "8.5"
+                    },
+                    {
+                      value: "0"
+                    },
+                    {
+                      value: "9"
+                    },
+                    {
+                      value: "8.5"
+                    },
+                    {
+                      value: "8"
+                    },
+                    {
+                      value: "8.5"
+                    }
+                  ]
+                },
+                {
+                  seriesname: "ออกไปวิ่ง",
+                  plottooltext: "$seriesname - <b> Scrore $label : <b>$datavalue</b>",
+                  data: [
+                    {
+                      value: "8.5"
+                    },
+                    {
+                      value: "7.5"
+                    },
+                    {
+                      value: "0"
+                    },
+                    {
+                      value: "0"
+                    },
+                    {
+                      value: "8.75"
+                    },
+                    {
+                      value: "9"
+                    }
+                  ]
+                },
+                {
+                  seriesname: "Running Inside",
+                  plottooltext: "$seriesname - <b> Scrore $label : <b>$datavalue</b>",
+                  data: [
+                    {
+                      value: "0.5"
+                    },
+                    {
+                      value: "8"
+                    },
+                    {
+                      value: "0"
+                    },
+                    {
+                      value: "0"
+                    },
+                    {
+                      value: "8.5"
+                    },
+                    {
+                      value: "9.5"
+                    }
+                  ]
+                },
+                {
+                  seriesname: "ไปวิ่งกัน",
+                  plottooltext: "$seriesname - <b> Scrore $label : <b>$datavalue</b>",
+                  data: [
+                    {
+                      value: "8.5"
+                    },
+                    {
+                      value: "0.5"
+                    },
+                    {
+                      value: "0.5"
+                    },
+                    {
+                      value: "0.5"
+                    },
+                    {
+                      value: "9"
+                    },
+                    {
+                      value: "8.5"
                     }
                   ]
                 }
