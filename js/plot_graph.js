@@ -530,7 +530,10 @@ $('document').ready(function () {
               chart: {
                 caption: "คุณภาพโพสต์ในแต่ละด้านของเพจ",
                 subcaption: "",
-                theme: "fusion",
+                theme: "gammel",
+                bgColor: "#FFFFFF",
+                bgAlpha: "0",
+                showBorder: "0",
                 numbersuffix: "",
                 plotfillalpha: "40",
                 baseFont: "Kanit"
