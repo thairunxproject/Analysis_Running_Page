@@ -108,7 +108,7 @@ $('document').ready(function () {
     dataFormat: "json",
     dataSource: {
       chart: {
-        caption: "ยอดไลก์และติดตามของ 12 อันดับเพจเกี่ยวกับการวิ่ง",
+        caption: "ยอดไลก์และติดตามของ 12 เพจเกี่ยวกับการวิ่ง",
         subcaption: "ณ วันที่ 26 สิงหาคม 2562",
         yaxisname: "ยอดการกดไลก์และติดตาม",
         numvisibleplot: "24",
@@ -161,7 +161,7 @@ $('document').ready(function () {
       ],
       dataset: [
         {
-          seriesname: "Liked",
+          seriesname: "Number of likes",
           data: [
             {
               value: "777818"
@@ -202,7 +202,7 @@ $('document').ready(function () {
           ]
         },
         {
-          seriesname: "followed",
+          seriesname: "Number of followers",
           data: [
             {
               value: "782537"
@@ -312,7 +312,7 @@ $('document').ready(function () {
             ],
             dataset: [
             {
-                seriesname: "ยอดคนกดไลก์วันที่ ณ วันที่ 26 สิงหาคม  2019",
+                seriesname: "ยอดคนกดไลก์ ณ วันที่ 26 สิงหาคม  2019",
                 data: [
                   {
                     value: "777818"
@@ -409,7 +409,7 @@ $('document').ready(function () {
               chart: {
                 theme: "fusion",
                 caption: "การจำลองข้อมูลเพจที่เกี่ยวข้องกับการวิ่ง",
-                subcaption: "โดยใช้ข้อมูล 12 เพจ",
+                subcaption: "",
                 xaxisminvalue: "-225",
                 xaxismaxvalue: "225",
                 yaxisminvalue: "-225",
